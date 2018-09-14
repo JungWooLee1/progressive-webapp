@@ -1,0 +1,9 @@
+
+var worker  = new Worker('doWorker.js');
+
+workder.addEventListener('message', function(e) {
+    console.log('workder said: ', e.data)
+}, false);
+
+
+worker.postMessage()
